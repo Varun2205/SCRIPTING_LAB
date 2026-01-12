@@ -1,5 +1,5 @@
 # Simple parser for Verilog file
-set filename "abc.txt"
+set filename "sync_up_down_counter.v"
 if {![file exists $filename]} {
     puts "Error: File not found"
     exit 1
