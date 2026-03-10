@@ -4,7 +4,8 @@ s = "module add(input A, input B, output sum);"
 module_name = s.split()[1].split("(")[0]
 # print(module_name)
 
-port_section = s[s.find("(")+1 : s.find(")")]
+port_section = s[s.find("(") : s.find(")")]
+print(port_section)
 ports = port_section.split(",")
 # print(port_section)
 # print(ports)

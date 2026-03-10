@@ -2,7 +2,7 @@
 
 l = []
 
-for i in range(24):
+for i in range(25):
     l.append(int(input(f'Enter {i+1} element: ')))
 
 print("Divisible by 3: ")

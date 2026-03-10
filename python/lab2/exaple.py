@@ -20,8 +20,17 @@
 # if pos == -1:
 #     print("No errors in this line")
 
-netlist_line = "NAND2_X1 u1 ( .A(a), .B(b), .Y(n1) ); NAND2_X1 u2 ( .A(n1), .B(c),.Y(y) );"
-print(netlist_line.count("NAND2_X1")) # 2
+# netlist_line = "NAND2_X1 u1 ( .A(a), .B(b), .Y(n1) ); NAND2_X1 u2 ( .A(n1), .B(c),.Y(y) );"
+# print(netlist_line.count("NAND2_X1")) # 2
 
-netlist_line = "NAND2_X1 u1 ( .A(a), .B(b), .Y(n1) ); NAND2_X1 u2 ( .A(n1), .B(c),.Y(y) );"
-print(netlist_line.count(".A")) # 2
+# netlist_line = "NAND2_X1 u1 ( .A(a), .B(b), .Y(n1) ); NAND2_X1 u2 ( .A(n1), .B(c),.Y(y) );"
+# print(netlist_line.count(".A")) # 2
+
+fname = "synthesis_report.rpt"
+print(fname.endswith(".rpt"))
+
+msg = "WARNING: Unconnected pin detected"
+print(msg.startswith("WARNING"))
+
+line = "Slack (VIOLATED) : -0.120"
+print(line.rfind("VIOLATED")) # last ':' index
